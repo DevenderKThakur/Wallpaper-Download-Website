@@ -1,0 +1,158 @@
+/* universal tag  */
+* {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.image3 {
+  background-color: black;
+}
+/* body tag  */
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("wp6161894.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* this is used to style the navigation bar  */
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  position: fixed;
+  top: 0;
+}
+/* style logo name of the website */
+.logo {
+  font-family: sans-serif;
+  font-size: 2.5em;
+}
+.logo span {
+  color: red;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+/* changing color of the first tab */
+.menu a:first-child {
+  color: red;
+}
+/* when cursor will touch change the color */
+.menu a:hover {
+  color: red;
+}
+.icon i {
+  font-size: 20px;
+}
+.icon i:hover {
+  color: red;
+}
+.icon a {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 30px; /*so that there is space between the search and the login*/
+  border-radius: 5px;
+}
+.h-text {
+  color: white;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* position: fixed; */
+  /* background-attachment: fixed; */
+}
+.h-text h1 {
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+.h-text button {
+  background-color: red;
+  color: white;
+}
+.filter-gallery {
+  padding: 100px;
+}
+.portfolio-menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portfolio-menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px 0px;
+  font-size: 20x;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.portfolio-menu ul li:hover {
+  color: white;
+  background-color: red;
+  border-radius: 8px;
+}
+/* this is to make the all list stay the same  */
+li.active {
+  color: white;
+  background-color: red;
+  border-radius: 8px;
+}
+h2 {
+  width: 350px;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: rgb(255, 210, 85);
+}
+
+#one {
+  animation-timing-function: ease;
+}
+
+#two {
+  animation-timing-function: linear;
+}
+
+#three {
+  animation-timing-function: ease-in;
+}
+
+#four {
+  animation-timing-function: ease-out;
+}
+
+#five {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes text {
+  from {
+    margin-left: 60%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
